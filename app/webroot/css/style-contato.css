@@ -1,0 +1,430 @@
+    @font-face {
+    font-family: Gotham-r;
+    src: url(../font/Gotham-Regular.ttf);
+}
+
+    @font-face {
+    font-family: Gotham-b;
+    src: url(../font/Gotham-Black.ttf);
+}
+
+    @font-face {
+    font-family: Gotham-bo;
+    src: url(../font/Gotham-Bold_0.ttf);
+}
+
+    @font-face {
+    font-family: Gotham-m;
+    src: url(../font/Gotham-Medium_0.ttf);
+}
+
+    @font-face {
+    font-family: Gotham-mi;
+    src: url(../font/Gotham-MediumItalic.ttf);
+}
+
+    @font-face {
+    font-family: Gotham-u;
+    src: url(../font/Gotham-Ultra.ttf);
+}
+
+@font-face {
+    font-family: Angle;
+    src: url(../font/AngleterreBook.ttf);
+}
+
+
+    body {
+        background-image: url(../img/bg-3.jpg);
+        background-color: #000000; 
+        background-repeat: no-repeat;
+        background-position:top center;
+/*        -moz-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        -o-background-size: 100% 100%;
+        -ms-background-size: 100% 100%;
+        background-size: 100% 100%;}*/
+
+        }
+
+        .container {
+            left:50%;
+            margin-left:-475px; /* metade da largura fictícia */
+            position: relative;
+            height: 100%;
+        }
+
+        .dot {
+            background-image: url(../img/dot.png);
+            background-repeat: repeat;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .bg-product {
+            overflow: auto;
+            position: absolute;
+            top: 160px;
+            left: 70px;
+            background-image: url(../img/fundo-cont-product.png);
+            width: 900px;
+            height: 464px;
+            overflow: hidden;
+
+        }
+
+        .undeline {
+            position: absolute;
+            top: 35px;
+            left: 35px;
+            color: #ffffff;
+            float: left;
+        }
+
+        .undeline1 {
+            position: absolute;
+            top:  38px;
+            left: 20px;
+            color: #ffffff;
+            float: left;
+        }
+
+        .menu-retangulo {
+            position: absolute;
+            top: 20px;
+            left: 275px;
+            width: 350px;
+            height: 40px;
+            border:1px #ffffff solid;
+            color: #ffffff;
+        }
+
+        .font-menu-retangulo {
+            position: absolute;
+            margin-top: 10px;
+            font-family: Gotham-r;
+            font-size: 16px;
+        }
+
+        .product {
+            position: absolute;
+            top: 10px;
+            left: 35px;
+            z-index: 10;
+            color: #ffffff;
+            font-family: Angle;
+            font-size: 27px;
+        }
+
+        .finos {
+            position: absolute;
+            top: 50px;
+            left: -368px;
+            z-index: 10;
+            color: #ffffff;
+            font-family: Gotham-r;
+            font-size: 27px;
+        }
+
+
+        .cont1 {
+            position: absolute;
+            float: left;
+            top: 65px;
+            left: 38px;
+            right:  375;
+            width: 825px;
+            height: 150px;
+        }
+
+        .cont2 {
+            position: absolute;
+            float: left;
+            margin-top: 70px;
+            margin-left: 42px;
+            right:  375;
+            width: 130px;
+            height: 150px;
+            color: #ffffff;
+            float: left;
+        }
+
+        .texto-cont-product {
+            position: absolute;
+            top: 320px;
+            left: 40px;
+            width: 825px;
+            height: auto;
+            color: #ffffff;
+            text-align: justify;
+            float: left;
+        }
+
+        .texto-cont-finos {
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 40px;
+            width: 825px;
+            height: auto;
+            color: #ffffff;
+            text-align: justify;
+        }
+
+        .teste-cont-product {
+            position: absolute;
+            margin-top: 5px;
+            margin-left: 40px;
+            width: 825px;
+            height: auto;
+            color: #ffffff;
+            text-align: justify;
+        }
+
+        .img-fundo {
+            position: absolute;
+            background-image: url(../img/fundo-menu.png);
+            top: 0px;
+            left: 175px;
+            width: 678px;
+            height: 73px;
+            
+        }
+
+        .img-fundo1 {
+            background-image: url(../img/logo.png);
+            position: absolute;
+            width: 106px;
+            height: 51px;
+            top: 10px;
+            left: 10px;
+            z-index: 3;
+        }
+
+        .logo {
+            position: absolute;
+            top: 15px;
+            right: 250px;
+        }
+
+
+
+    *{margin: 0; padding: 0;}
+
+
+.menu{
+    position: absolute; 
+    top: 22px;
+    left: 130px;
+    font-family: Gotham-r;
+    font-size: 18px;
+    width: 515px;
+    height: 250px;
+    float: left;
+
+    
+ 
+    float:left; 
+}
+
+.menu li{
+    float:left; 
+    background-color: #000000;
+
+}
+
+.menu li a{color:#ffffff; text-decoration:none; padding:5px 10px; display:block;}
+ 
+.menu li a:hover{
+text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+
+}
+
+.menu li  ul{
+position:absolute; 
+top:25px; 
+left:0;
+text-align: left; 
+display:none;
+width: 250px;
+}
+
+.menu li:hover ul, .menu li.over ul {
+    display:block;
+    font-size: 12px;
+}
+
+.menu li ul li{
+
+display:block;
+width:150px;
+z-index: 999;
+}
+
+/*FORMULÁRIO DE CONTATO INICIO*/
+
+.form-contact {
+    position: absolute;
+    top: 100px;
+    left: 35px;
+}
+
+.texto-fale {
+    font-family: Gotham-r;
+    font-size: 19.5px;
+    color: #ffffff;
+    position: absolute;
+    top: 60px;
+    left: 35px;
+}
+
+.para-contato {
+    font-family: Gotham-r;
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    top: 90px;
+    left: 35px;
+}
+
+.hint {
+    font-family: Gotham-r;
+    color: #aaaaaa;
+}
+
+label {
+    font-family: Arial, Verdana;
+    text-shadow: 2px 2px 2px #ccc;
+    display: block;
+    float: left; margin-right:15px;
+    font-weight: bold;
+    margin-right:10px;
+    text-align: right;
+    width: 120px;
+    line-height: 25px;
+    font-size: 15px;
+    }
+
+.field1 {
+    position: relative;
+    margin-top: 20px;
+    
+}
+
+.field2 {
+    position: relative;
+    margin-top: 10px;
+    
+   
+}
+
+.field3 {
+    position: relative;
+    margin-top: 10px;
+    
+}
+
+.field4 {
+    position: relative;
+    margin-top: 10px;
+    
+}
+
+.field5 {
+    position: absolute;
+    top: 20px;
+    left: 400px;
+}
+
+.field6 {
+    position: absolute;
+    top: 135px;
+    left: 780px;
+}
+
+
+/*FORMULÁRIO DE CONTATO FINAL*/
+
+.nome {
+    position: absolute;
+    font-family: Gotham-r;
+    font-size: 18px;
+    color: #ffffff;
+    top: 295px;
+    left: 35px;
+}
+
+.rua {
+    position: absolute;
+    font-family: Gotham-r;
+    font-size: 14px;
+    color: #ffffff;
+    top: 320px;
+    left: 35px;
+}
+
+.cidade {
+    position: absolute;
+    font-family: Gotham-r;
+    font-size: 14px;
+    color: #ffffff;
+    top: 340px;
+    left: 35px;
+}
+
+.cep {
+    position: absolute;
+    font-family: Gotham-r;
+    font-size: 14px;
+    color: #ffffff;
+    top: 360px;
+    left: 35px;
+}
+
+.telefone {
+    position: absolute;
+    font-family: Gotham-r;
+    font-size: 14px;
+    color: #ffffff;
+    top: 380px;
+    left: 35px;
+}
+
+.error-form {
+    border:2px solid red;
+}
+
+.error {
+    color: #FF0000 !important;
+}
+
+.msg-test {
+    position: absolute;
+    font-family: Gotham-r;
+    font-size: 14px;
+    top: 130px;
+    left: 0px;
+    color: #ffffff;
+}
+
+.success {
+    color: #7FFF00 !important;
+}
+
+
+.footer {
+    position: relative;
+    font-family: Gotham-r;
+    font-size: 10px;
+    color: #ffffff;
+    bottom: 15px;
+}
+
+body {
+    overflow-x:hidden;
+    overflow-y:hidden;
+}

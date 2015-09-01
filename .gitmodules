@@ -1,0 +1,18 @@
+[submodule "app/Plugin/DebugKit"]
+	path = app/Plugin/DebugKit
+	url = https://github.com/cakephp/debug_kit.git
+[submodule "app/Plugin/ServicePlugin"]
+	path = app/Plugin/ServicePlugin
+	url = https://github.com/gquental/cakephp-service-container.git
+[submodule "app/Plugin/RepositoryPlugin"]
+	path = app/Plugin/RepositoryPlugin
+	url = https://github.com/gquental/cakephp-repositories.git
+[submodule "add"]
+	path = add
+	url = https://github.com/krolow/Attach.git
+[submodule "app/Plugin/Attach"]
+	path = app/Plugin/Attach
+	url = https://github.com/krolow/Attach.git
+[submodule "app/Plugin/Migrations"]
+	path = app/Plugin/Migrations
+	url = https://github.com/CakeDC/migrations.git
